@@ -1,11 +1,4 @@
-<html>
-	<head>
-		<title>Register Here</title>
-		<link href="css/register.css" rel="stylesheet" />
-	</head>
-	<body>
-		<div class="container">
-			<h1 class="hed">Register here</h1>
+
 			
 			<?php 
 			
@@ -104,7 +97,7 @@
 					
 				}
 				
-				// Gender Validation
+				
 				
 				
 				// State Validation
@@ -162,64 +155,4 @@
 			?>
 			
 			
-			<form method="POST" action="">
-				
-				<div class="formgroup">
-					<label>Username</label>
-					<input type="text" name="uname" class="formcontrol" value="<?php if(isset($_POST['uname'])) echo $_POST['uname']; ?>" />
-					<small class="error"><?php if(isset($errors['uname'])) echo $errors['uname']; ?></small>
-				</div>
-				
-				<div class="formgroup">
-					<label>Email</label>
-					<input type="text" name="email" class="formcontrol" value="<?php if(isset($_POST['email'])) echo $_POST['email']; ?>" />
-					<small class="error"><?php if(isset($errors['email'])) echo $errors['email']; ?></small>
-				</div>
-				
-				<div class="formgroup">
-					<label>Password</label>
-					<input type="password" name="pwd" class="formcontrol" value="<?php if(isset($_POST['pwd'])) echo $_POST['pwd']; ?>" />
-					<small class="error"><?php if(isset($errors['pwd'])) echo $errors['pwd']; ?></small>
-				</div>
-				
-				<div class="formgroup">
-					<label>Confirm Password</label>
-					<input type="password" name="cpwd" class="formcontrol" value="<?php if(isset($_POST['cpwd'])) echo $_POST['cpwd']; ?>" />
-					<small class="error"><?php if(isset($errors['cpwd'])) echo $errors['cpwd']; ?></small>
-				</div>
-				
-				<div class="formgroup">
-					<label>Mobile</label>
-					<input type="text" name="mobile" class="formcontrol" />
-					<small class="error"><?php if(isset($errors['mobile'])) echo $errors['mobile']; ?></small
-				</div>
-				
-				<div class="formgroup">
-					<label>Gender</label>
-					<label><input type="radio" name="gender" value="Male" />Male </label>
-					<label><input type="radio" name="gender" value="Female" />Female</label>
-				</div>
-				
-				<div class="formgroup">
-					<label>Select State</label>
-					<select name="state" class="formcontrol">
-						<option value="">--Select State--</option>
-						<option  value="Telanagana" <?php if(isset($_POST['state'])) if($_POST['state'] === "Telanagana") echo "selected";  ?> >Telanagana</option>
-						
-						<option  value="Andhrapradesh" <?php if(isset($_POST['state'])) if($_POST['state'] === "Andhrapradesh") echo "selected";  ?> >Andhrapradesh</option>
-						
-						<option  value="Odisha" <?php if(isset($_POST['state'])) if($_POST['state'] === "Odisha") echo "selected";  ?> >Odisha</option>
-						
-					</select>
-					<small class="error"><?php if(isset($errors['state'])) echo $errors['state']; ?></small>
-				</div>
-				
-				<div class="formgroup">
-					<input type="submit" value="signup" name="registerbtn" class="btn" />
-					<a href="login.php">Login here</a>
-				</div>
-				
-			</form>
-		</div>
-	</body>
-</html>
+			
