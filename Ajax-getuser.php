@@ -15,7 +15,7 @@
 						var txt = "";
 						for(user of data)
 						{
-							txt += "<p>Name: "+user.username+" and "+user.email+"</p>";
+							txt += "<p>Name: "+user.username+" and Email "+user.email+"</p>";
 						}
 						
 						list.innerHTML = txt;
